@@ -25,25 +25,47 @@
   </div>
   <div class="col-12 md:col-6">
     <p-card header="Formato Fecha">
-      <ul>
+      <ol>
         <li> fecha</li>
-        <li>fecha | date</li>
+        <li> fecha | date</li>
         <li> fecha | date:'short'</li>
-        <li> fecha | date:'shortTime'  </li>
-      <li> fecha | date:'mm:ss' </li>
-      <li> fecha | date:"MMM dd, yyyy 'at' hh:mm a" </li>
-      </ul>
+        <li> fecha | date:'shortTime' </li>
+        <li> fecha | date:'mm:ss' </li>
+        <li> fecha | date:"MMM dd, yyyy 'at' hh:mm a" </li>
+        <li> fecha | date:'long'</li>
+        <li> fecha | date:'MMMM'</li>
+      </ol>
+      <hr>
+      <ol>
+        <li> fecha | date:'long':'GMT-6'</li>
+        <li> fecha | date:'long':'GMT-4' </li>
+        <li> fecha | date:'long':'en español agentina' </li>
+        <li> fecha | date:'long':'hora EEUU' </li>
+        <li> fecha | date:'long':'frances Canada' </li>
+
+      </ol>
     </p-card>
   </div>
   <div class="col-12 md:col-6">
     <p-card header="Fechas con pipes">
-      <li> {{fecha}}</li>
-      <li>{{fecha | date}}</li>
-      <li>{{ fecha | date:'short'}}</li>
-      <li>{{ fecha | date:'shortTime' }} </li>
-      <li>{{ fecha | date:'mm:ss' }} </li>
-      <li>{{ fecha | date:"MMM dd, yyyy 'at' hh:mm a" }}</li>
-
+      <ol>
+        <li> {{fecha}}</li>
+        <li>{{fecha | date}}</li>
+        <li>{{ fecha | date:'short'}}</li>
+        <li>{{ fecha | date:'shortTime' }} </li>
+        <li>{{ fecha | date:'mm:ss' }} </li>
+        <li>{{ fecha | date:"MMM dd, yyyy 'at' hh:mm a" }}</li>
+        <li>{{ fecha | date:'long'}}</li>
+        <li>{{ fecha | date:'MMMM'}}</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>{{ fecha | date:'long':'GMT-6'}}</li>
+        <li>{{ fecha | date:'long':'GMT-4'}}</li>
+        <li>{{ fecha | date:'long':'': 'es-AR'}}</li>
+        <li>{{ fecha | date:'long':'': 'en'}}</li>
+        <li>{{ fecha | date:'long':'': 'fr-CA'}}</li>
+      </ol>
     </p-card>
   </div>
 
